@@ -1,0 +1,236 @@
+*, ::before, ::after {box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+
+body {
+height: 100vh;
+width: 100%;
+color: bisque;
+background:#1e4258;
+font-family: Raleway;
+}
+
+
+.section-header {
+    font-size: 2.2rem;
+    font-weight: 150;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /*background-image: url(header-background.jpg); */
+}
+
+#welcome-section h1 {
+    font-size: 8rem;
+    font-weight: 200;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    #welcome-section h1 {
+        font-size: 4rem;
+    }
+    }
+
+#welcome-section h2 {
+    font-size: 2.5rem;
+    font-weight: 150;
+    padding-bottom: 0.5em;
+}
+
+@media (max-width: 900px) {
+    #welcome-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    padding-top: 1em;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;  
+}
+
+#navbar li {
+    list-style: none;
+    margin: 0 5em; 
+}
+
+@media (max-width: 900px) {
+    #navbar li {display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+}
+
+li a {color:bisque;}
+
+a {text-decoration: none;
+color:bisque;
+}
+
+a:hover {color: #2eaba7;}
+
+.about {
+    max-width: 100%;
+    background-image: linear-gradient(180deg, #1e4258 80%, #494b68);
+}
+
+.text-container {
+    width:50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.6em;   
+}
+
+#projects {
+    width: 100%;
+    padding: 0 0 10rem 0;
+    background-image: linear-gradient( 180deg, #494b68, #212336);
+}
+
+
+#project-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+}
+
+#project-tile {
+    padding-left: 1.5em;
+}
+
+.project-link {
+    font-size: 1.2rem;
+    position: absolute;
+    margin-top: -18em;
+}
+
+iframe {
+   display: flex;
+   flex-direction: column;
+}
+
+.preview {
+    width:60vw; height:80vh;
+    -webkit-transform:scale(.25);
+    -ms-transform:scale(.5);
+    transform:scale(.5);
+    -webkit-transform-origin:0 0; 
+    -ms-transform-origin:0 0; 
+    transform-origin:0 0; 
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .preview {
+        width:85%; height:80vh;
+        -webkit-transform:scale(.75);
+        -ms-transform:scale(1);
+        transform:scale(0.75);
+        -webkit-transform-origin:0 0; 
+        -ms-transform-origin:0 0; 
+        transform-origin:0 0; 
+        margin: 0 auto;
+    }
+
+    .project-link{
+        margin-top: -11em;
+        font-size: 1rem;
+        text-align: center;
+        width: 85%;
+    }
+}
+
+
+#contact-info {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+#contact-info > h2 {
+    font-size: 2.5rem;
+}
+
+#contact-info > h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: -1em;
+}
+
+.link-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.4rem;
+}
+
+
+@media (max-width: 900px) {
+    .section-header {
+        font-size: 1.6rem;
+        top: 0;
+    }
+    #contact-info h2 {
+        font-size: 1.6rem;
+    }
+
+    #contact-info h3 {
+        font-size:  1.2rem;
+    }
+
+    .contact-link {
+        font-size: 1rem;
+    }
+}
+
+/* Your portfolio should have at least one media query 
+
+The height of the welcome section should be equal to the height of the viewport
+
+The navbar should always be at the top of the viewport */
+
+/* Use different background colors for each section */
+
+
+/* Add scroll animation from https://personal-portfolio.freecodecamp.rocks/#welcome-section */

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Portfolio</title> <!--title-->
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/0cb60b4512.js"
+            crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+            rel="stylesheet"/>
+
+    </head>
+
+    <body>
+        <section id="welcome-section">
+            <h1>Hello World</h1>  <!--WELCOME, add text-->
+            <h2>I'm Nick, a web developer</h2>
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#about">About</a></li> <!--add nav links-->
+                    <li class="nav-link"><a href="#projects">Work</a></li>
+                    <li class="nav-link"><a href="#contact-info">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-header">About Me</h2>
+            <div class="text-container">
+             <p class="about-text">
+                Hi, I'm Nick. I started learning web development in August 2024 while working full time as an electrician. Currently, I am learning HTML, CSS and Javascript in my free time. I love to challenge myself and am always looking to improve. If you would like to collaborate or have any tips, please feel free to contact me via email or GitHub messages.
+             </p>
+            </div>
+        </section>
+
+        <section id="projects"> <!--projects-->
+            <h2 class="project-header section-header">Work</h2>
+            <div id="project-grid">
+                <!--tribute, documentation, product landing page, nick and robin, form page?-->
+                <div id="project-tile">
+                    <iframe class="preview" src="https://nfaber1095.github.io/Product-Landing-Page/"></iframe>
+                    <a class="project-link" href="https://nfaber1095.github.io/Product-Landing-Page/" >Product Landing Page
+                    </a>
+                </div>
+                <div id="project-tile">
+                    <iframe class="preview" src="https://nfaber1095.github.io/HTML-Technical-Documentation-FCA/"></iframe>
+                    <a class="project-link" href="https://nfaber1095.github.io/HTML-Technical-Documentation-FCA/">HTML Technical Documentation</a>
+                </div> 
+                <div id="project-tile">
+                    <iframe class="preview" src="https://nfaber1095.github.io/Survey-form/"></iframe>
+                    <a class="project-link" href="https://nfaber1095.github.io/Survey-form/">Mock Survey Form</a> 
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-info">
+            <h2 class="section-header">Let's work together</h2>
+            <h3>Contact me via email or GitHub</h3>
+            <div class="link-container">
+                <p class="github contact-link"><a href="https://github.com/nfaber1095" target="_blank"><i class="fa-brands fa-square-github"></i> GitHub</a></p>
+                <p class="email contact-link"><a href="mailto:example@example.com"><i class="fa-solid fa-envelope"></i> Email</a></p>
+            </div>
+        </section> 
+    </body>
+    <footer></footer>
+
+    <!--
+
+
+The projects section should contain at least one link to a project
+
+Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
+
+-->
